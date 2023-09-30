@@ -1,0 +1,60 @@
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+.App {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 120rem;
+  background-color: #ddd;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.form-container {
+  background-color: #eee;
+  width: 40%;
+  border-radius: 20px;
+  padding: 0 2rem;
+  /* TYMCZASOWO  */
+  margin-top: 40rem;
+  margin-left: 25rem;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.input {
+  background-color: #eee;
+  color: rgb(33, 33, 33);
+  border: none;
+  height: 3rem;
+  width: 90%;
+}
+input:focus {
+  outline: none;
+}
+
+.btn {
+  height: 3rem;
+  border: none;
+}
+
+.send-icon {
+  color: rgb(33, 33, 33);
+}
