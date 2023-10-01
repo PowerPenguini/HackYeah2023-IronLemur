@@ -139,7 +139,7 @@ section {
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 20px;
-  background-color: #D28B0055;
+  background-color: #93B1FF55;
 }
 .location {
   display: flex;
@@ -173,7 +173,7 @@ section {
   display: flex;
 }
 .button {
-  background-color: #D28B00bb;
+  background-color: #93B1FFbb;
   display: grid;
   place-items: center;
   border-radius: 0 10px 10px 0;
@@ -182,7 +182,7 @@ section {
   transition: background-color 0.2s ease;
 }
 .button:hover {
-  background-color: hsl(40, 100%, 70%);
+  background-color: #93B1FF66;
 }
 .button img {
   fill: #213547;
@@ -217,7 +217,7 @@ section {
 
 }
 .human div {
-  background-color: #D28B00ee;
+  background-color: #93B1FFee;
   padding: 10px;
   border-radius: 20px 4px 20px 20px;
 }

@@ -21,7 +21,7 @@
     .bar {
         width: 0;
         height: 100%;
-        background-color: #D28B00ee; /* Kolor paska postępu */
+        background-color: #93B1FFee; /* Kolor paska postępu */
         animation: loading 4.5s linear infinite;
     }
 
