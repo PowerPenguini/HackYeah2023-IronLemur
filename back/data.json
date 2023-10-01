@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Uniwersytet Warszawski",
+        "city": "Warszawa",
+        "description": "Uniwersytet Warszawski (UW) to jeden z najstarszych i najważniejszych uniwersytetów w Polsce oraz Europie Środkowej. Został założony w 1816 roku i ma swoją siedzibę w Warszawie. UW jest jednym z największych uniwersytetów w Polsce i oferuje różnorodne kierunki studiów, od nauk humanistycznych po nauki przyrodnicze.",
+        "tags": ["Wiele kierunków", "Międzynarodowe badania"]
+    },
+    {
+        "name": "Uniwersytet Jagielloński",
+        "city": "Kraków",
+        "description": "Uniwersytet Jagielloński (UJ), założony w 1364 roku, jest jednym z najstarszych i najważniejszych uniwersytetów w Europie Środkowej. Znajduje się w malowniczym Krakowie, Polska, i ma bogatą historię oraz prestiżową pozycję w światowym środowisku akademickim.",
+        "tags": ["Topowi wykładowcy", "Międzynarodowe badania"]
+    },
+    {
+        "name": "Politechnika Warszawska",
+        "city": "Warszawska",
+        "description": "Politechnika Warszawska (PW) to jedna z najstarszych i najważniejszych uczelni technicznych w Polsce i Europie Środkowej. Założona w 1826 roku, mieści się w stolicy Polski, Warszawie. Politechnika Warszawska ma bogatą tradycję i jest uznawana za czołową uczelnię inżynieryjną i techniczną w regionie.",
+        "tags": ["Współpraca z przemysłem", "Innowacje"]
+    },
+    {
+        "name": "Akademia Górniczo-Hutnicza",
+        "city": "Kraków",
+        "description": "Akademia Górniczo-Hutnicza (AGH) to jedna z czołowych uczelni technicznych w Polsce i Europie Środkowej. Założona w 1919 roku, z siedzibą w Krakowie, AGH ma długą historię i uznawana jest za znaczącą instytucję naukowo-badawczą i edukacyjną. AGH oferuje różnorodne kierunki studiów, prowadzi innowacyjne badania naukowe i wspiera rozwój technologii i przemysłu.",
+        "tags": ["Innowacje", "Współpraca z przemysłem"]
+    },
+    {
+        "name": "Uniwersytet Wrocławski",
+        "city": "Wrocław",
+        "description": "Uniwersytet Wrocławski (UW) to jedna z czołowych i najstarszych uczelni w Polsce oraz Europie Środkowej. Założony w 1702 roku, z siedzibą we Wrocławiu, UW ma długą i prestiżową historię. Jest uważany za ważny ośrodek naukowy, kulturalny i edukacyjny w regionie.",
+        "tags": ["Topowi wykładowcy"]
+    },
+    {
+        "name": "Uniwersytet Gdański",
+        "city": "Gdańsk",
+        "description": "Uniwersytet Gdański (UG) oferuje różnorodne programy studiów na poziomie licencjackim, magisterskim i doktoranckim, obejmujące różne dziedziny nauki i sztuki. Uczelnia prowadzi także badania naukowe w wielu dziedzinach i współpracuje z innymi instytucjami naukowymi oraz przedsiębiorstwami.",
+        "tags": ["Wiele kierunków", "Innowacje"]
+    },
+    {
+        "name": "Uniwersytet Poznański",
+        "city": "Poznań",
+        "description": "Uniwersytet im. Adama Mickiewicza w Poznaniu (UAM) to jedna z czołowych uczelni w Polsce i Europie Środkowej. Założony w 1919 roku, Uniwersytet Poznański jest jednym z najstarszych uniwersytetów w Polsce.",
+        "tags": ["Wiele kierunków"]
+    },
+    {
+        "name": "Uniwersytet Łódzki",
+        "city": "Łódź",
+        "description": "Uniwersytet Łódzki (UŁ) to renomowana uczelnia w Polsce, oferująca różnorodne programy studiów i wyróżniająca się wysoką jakością nauczania i badań naukowych. Uczelnia ma długą historię i uznawana jest za jedną z czołowych uczelni w kraju.",
+        "tags": ["Wiele kierunków", "Międzynarodowe badania"]
+    },
+    {
+        "name": "Politechnika Wrocławska",
+        "city": "Wrocław",
+        "description": "Politechnika Wrocławska to renomowana uczelnia techniczna w Polsce, która oferuje wysokiej jakości programy studiów z zakresu nauk technicznych, inżynieryjnych i nauk ścisłych. Uczelnia cieszy się uznaniem za swoją kadre naukową, badania naukowe oraz współpracę z przemysłem.",
+        "tags": ["Współpraca z przemysłem"]
+    },
+    {
+        "name": "Katolicki Uniwersytet Lubelski Jana Pawła II",
+        "city": "Lublin",
+        "description": "Katolicki Uniwersytet Lubelski Jana Pawła II (KUL) to renomowana uczelnia katolicka w Polsce, znana również pod skróconą nazwą KUL. Uczelnia ta wyróżnia się jakość nauczania, głębokim związkami z Kościołem katolickim oraz tradycją katolicką.",
+        "tags": ["Długa historia"]
+    }
+]

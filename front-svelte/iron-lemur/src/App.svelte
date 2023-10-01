@@ -2,20 +2,32 @@
   import locationSvg from "../src/assets/location.svg";
   import sendSvg from "../src/assets/send.svg";
   import logoSvg from "../src/assets/logo.svg";
-  import axios from "axios";
+  import axios, { formToJSON } from "axios";
+  import Loader from "./lib/Loader.svelte";
 
   let textarea;
   let nothing;
   let history = {};
   let recommendations = [];
-
-
-  const submitMsg = async () => {
+  let isLoading = false;
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter' && !event.shiftKey) {
+      event.preventDefault(); // Zapobieganie przejściu do nowej linii w textarea
+      submitMsg(event); // Wywołanie handleSubmit po naciśnięciu Enter
+    }
+  }
+  const submitMsg = async (event) => {
+    event.preventDefault(); 
+    isLoading = true
     if (textarea.value.trim() == "")
-    return;
-  
+    {
+      isLoading = false
+      return;
+    }
     let cachedMessage = textarea.value;
     textarea.value = "";
+  
+
     try {
       const response = await axios.post("http://localhost:8000/ai-msg", {message: cachedMessage});
       const data = response.data;
@@ -30,6 +42,7 @@
     } catch (error) {
       console.error("Error fetching data:", error);
     }
+    isLoading = false;
 
   };
 </script>
@@ -46,8 +59,9 @@
         <div class="location"><img src="{locationSvg}" alt="">{r.city}</div>
         <p>{r.description}</p>
         <div class="tag-cloud">
-          <div class="tag">Przyjazne dla niepełnosprawnych</div>
-          <div class="tag">Zielona uczelnia</div>
+          {#each r.tags as tag}
+            <div class="tag">{tag}</div>
+          {/each}
         </div>
       </div>
       {/each}
@@ -66,9 +80,12 @@
         <div class="bot"><div>{bot}</div></div>
       </div>
       {/each}
-
+      <Loader {isLoading}/>
     </div>
-    <div class="prompt-enter"><textarea class="textarea" placeholder="Jakie masz hobby? Co chciałbyś studiować?" bind:this={textarea}></textarea><div class="button" on:click={submitMsg}><img src="{sendSvg}" alt=""></div></div>
+    <form on:submit|preventDefault={submitMsg} class="prompt-enter">
+      <textarea class="textarea" placeholder="Jakie masz hobby? Co chciałbyś studiować?" bind:this={textarea} on:keydown={handleKeyPress}></textarea>
+      <button class="button" on:click={submitMsg}><img src="{sendSvg}" alt=""></button>
+    </form>
   
   </section>
 </main>
@@ -178,7 +195,6 @@ section {
   gap: 10px;
   overflow-y: auto;
   margin-bottom: 20px;
-
 }
 .chat-pair {
   display: grid;
